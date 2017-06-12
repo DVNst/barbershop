@@ -27,16 +27,17 @@
 			<h1>Средства для ухода</h1>
 			
 			<nav class="shop-menu">
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Магазин</a></li>
-				<li><a href="#">Средства для ухода</a></li>
-				</a></li>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a class="shop-menu__btn_active">Средства для ухода</a></li>					
+				</ul>
 			</nav>
 		</div>
 	</header>
 	<main class="shop">
 		<div class="container">
-			<form class="shop__filters" method="post">
+			<form class="shop__filters" method="get">
 				<b>Производители:</b>
 				<label>
 					<input type="checkbox" name="producer" value="Baxter-of-California" checked>
@@ -79,51 +80,88 @@
 			</form>
 			<div class="shop__catalog">
 				<div class="shop__item">
-					<img src="img/item1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">					
-					<p class="shop__title">Набор для путешествий<p>
-					<p class="shop__name">«Baxter of California»</p>
-					<p class="shop__price">2900 руб.</p>
-					<button class="btn">Купить</button>
+					<img src="img/item1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+					<h2>
+						<a href="#">
+							<span class="shop__types">Набор для путешествий</span>
+							<span class="shop__producer">«Baxter of California»</span>
+						</a>
+					</h2>					
+					<p>
+						<span class="shop__price">2900 руб.</span>
+						<a class="btn" href="#">Купить</a>
+					</p>
 				</div>
 				<div class="shop__item">
 					<img src="img/item2.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
-					<p class="shop__title">Увлажняющий кондиционер<p>
-					<p class="shop__name">«Baxter of California»</p>
-					<p class="shop__price">750 руб.</p>
-					<button class="btn">Купить</button>
-				</div>
+					<h2>
+						<a href="#">
+							<span class="shop__types">Увлажняющий кондиционер</span>
+							<span class="shop__producer">«Baxter of California»</span>
+						</a>
+					</h2>					
+					<p>
+						<span class="shop__price">750 руб.</span>
+						<a class="btn" href="#">Купить</a>
+					</p>
 				<div class="shop__item">
 					<img src="img/item3.jpg" width="220" height="165" alt="Гель для волос «Suavecito»">
-					<p class="shop__title">Гель для волос<p>
-					<p class="shop__name">«Suavecito»</p>
-					<p class="shop__price">290 руб.</p>
-					<button class="btn">Купить</button>
+					<h2>
+						<a href="#">
+							<span class="shop__types">Гель для волос</span>
+							<span class="shop__producer">«Suavecito»</span>
+						</a>
+					</h2>					
+					<p>
+						<span class="shop__price">290 руб.</span>
+						<a class="btn" href="#">Купить</a>
+					</p>
 				</div>
 				<div class="shop__item">
 					<img src="img/item4.jpg" width="220" height="165" alt="Глина для укладки волос «American crew»">
-					<p class="shop__title">Глина для укладки волос <p>
-					<p class="shop__name">«American crew»</p>
-					<p class="shop__price">500 руб.</p>
-					<button class="btn">Купить</button>
+					<h2>
+						<a href="#">
+							<span class="shop__types">Глина для укладки волос</span>
+							<span class="shop__producer">«American crew»</span>
+						</a>
+					</h2>					
+					<p>
+						<span class="shop__price">500 руб.</span>
+						<a class="btn" href="#">Купить</a>
+					</p>
 				</div>
 				<div class="shop__item">
 					<img src="img/item5.jpg" width="220" height="165" alt="Гель для волос «American crew»">
-					<p class="shop__title">Гель для волос<p>
-					<p class="shop__name">«American crew»</p>
-					<p class="shop__price">300 руб.</p>
-					<button class="btn">Купить</button>
+					<h2>
+						<a href="#">
+							<span class="shop__types">Гель для волос</span>
+							<span class="shop__producer">«American crew»</span>
+						</a>
+					</h2>					
+					<p>
+						<span class="shop__price">300 руб.</span>
+						<a class="btn" href="#">Купить</a>
+					</p>
 				</div>
 				<div class="shop__item">
 					<img src="img/item6.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
-					<p class="shop__title">Набор для бритья<p>
-					<p class="shop__name">«Baxter of California»</p>
-					<p class="shop__price">3900 руб.</p>
-					<button class="btn">Купить</button>
+					<h2>
+						<a href="#">
+							<span class="shop__types">Набор для бритья</span>
+							<span class="shop__producer">«Baxter of California»</span>
+						</a>
+					</h2>					
+					<p>
+						<span class="shop__price">3900 руб.</span>
+						<a class="btn" href="#">Купить</a>
+					</p>
 				</div>
-				<a class="btn" href="#">1</a>
-				<a class="btn shop__btn_active" href="#">2</a>
-				<a class="btn" href="#">3</a>
-				<a class="btn" href="#">4</a>
+				<div class="paginator">
+					<a class="btn" href="#">1</a>
+					<a class="btn paginator-btn_active" href="#">2</a>
+					<a class="btn" href="#">3</a>
+					<a class="btn" href="#">4</a>
+				</div>
 			</div>
 		</div>		
 	</main>
