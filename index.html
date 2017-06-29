@@ -3,10 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>BarberShop</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<div class="container">
+	<header class="main-header">
+		<div class="container clearfix">
 			<nav class="main-menu">
 				<ul>
 					<li><a href="#">Информация</a></li>
@@ -21,11 +24,12 @@
 			</div>			
 		</div>
 	</header>
+	
 	<main class="container">
 		<div class="logo">
 			<img src="img/logo.png" width="328" height="204" alt="BarberShop">
 		</div>
-		<section class="features">
+		<section class="features clearfix">
 			<div class="features__item">
 				<b class="features__name">Быстро</b>
 				<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
@@ -39,16 +43,16 @@
 				<p>Наши мастер - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
 			</div>					
 		</section>
-		<section class="index-content">
+		<section class="index-content clearfix">
 			<div class="index-content__left">
 				<h2 class="index-content__title">Новости</h2>
 				<ul class="news-preview">
 					<li>
-						<p class="news-preview">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+						<p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
 						<time datetime="2016-01-11">11 января</time>
 					</li>
 					<li>
-						<p class="news-preview">В нашей команде поплнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+						<p>В нашей команде поплнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
 						<time datetime="2016-01-18">18 января</time>
 					</li>
 				</ul>
@@ -56,14 +60,16 @@
 			</div>
 			<div class="index-content__right">
 				<h2 class="index-content__title">Фотогалерея</h2>
-				<figure class="gallery">
-					<img src="img/photo-1.jpg" width="286" height="164" alt="">
-				</figure>
-				<button class="btn gallery__prev">Назад</button>
-				<button class="btn gallery__next">Вперед</button>
+				<div class="gallery">
+					<figure class="gallery__content">
+						<img src="img/photo-1.jpg" width="286" height="164" alt="">
+					</figure>
+					<button class="btn gallery__prev" disabled>Назад</button>
+					<button class="btn gallery__next">Вперед</button>
+				</div>
 			</div>
 		</section>
-		<section class="index-content">
+		<section class="index-content clearfix">
 			<div class="index-content__left">					
 				<h2 class="index-content__title">Контактная информация</h2>
 				<p>
@@ -82,7 +88,7 @@
 			<div class="index-content__right">
 				<h2 class="index-content__title">Записаться</h2>
 				<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-				<form method="post">
+				<form class="appointment-form" method="post">
 					<input type="text" name="date" placeholder="Дата">
 					<input type="text" name="time" placeholder="Время">
 					<input type="text" name="name" placeholder="Ваше имя">
@@ -92,8 +98,9 @@
 			</div>
 		</section>
 	</main>
-	<footer>
-		<div class="container">
+	
+	<footer class="main-footer">
+		<div class="container clearfix">
 			<div class="footer-contact">					
 				<p>
 					Барбершоп "Бородинский"<br>
@@ -103,15 +110,16 @@
 				</p>
 			</div>
 			<div class="footer-socials">
+				<p>Давайте дружить!</p>
 				<a class="socials-btn socials-btn-vk" href="#">Вконтакте</a>
 				<a class="socials-btn socials-btn-fb" href="#">Фейсбук</a>
 				<a class="socials-btn socials-btn-ig" href="#">Инстаграм</a>
 			</div>
 			<div class="footer-copyright">
 				<p>Разработано:</p>
-				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+				<a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
 			</div>
 		</div>
-	</footer>	
+	</footer>
 </body>
 </html>
