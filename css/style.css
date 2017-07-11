@@ -407,12 +407,12 @@ body {
 }
 
 .socials-btn-vk {	
-   background-position: -158px 14px;   
+	background-position: -158px 14px;   
 }
 
 .socials-btn-vk:hover {
 	background-color: #ffffff;
-   background-position: -201px 14px;
+	background-position: -201px 14px;
 }
 
 .socials-btn-fb {
@@ -426,12 +426,12 @@ body {
 }
 
 .socials-btn-ig {
-   background-position: -70px 11px;
+	background-position: -70px 11px;
 }
 
 .socials-btn-ig:hover {
 	background-color: #ffffff;
-   background-position: -113px 11px;
+	background-position: -113px 11px;
 }
 
 .footer-copyright {
